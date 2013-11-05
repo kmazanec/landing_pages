@@ -19,8 +19,7 @@ development:
   encoding: unicode
   database: landing_development
   pool: 5
-  username: landing
-  password:
+
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -48,13 +47,9 @@ test:
   encoding: unicode
   database: landing_test
   pool: 5
-  username: landing
-  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: landing_production
   pool: 5
-  username: landing
-  password:
