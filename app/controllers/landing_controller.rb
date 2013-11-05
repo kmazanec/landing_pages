@@ -6,11 +6,11 @@ class LandingController < ApplicationController
     when "www.adoptacoder.org"
       render :adopt_a_coder
     when "keithmazanec.com"
-      redirect_to keithmazanec_path
-    when "localhost"
+      render :keithmazanec
+    when "locahost"
       render :adopt_a_coder
     else
-      redirect_to keithmazanec_path
+      render :error
     end
   end
 
