@@ -1,5 +1,5 @@
 Landing::Application.routes.draw do
-  root 'landing#adopt_a_coder'
+  root 'landing#index'
   get '/adopt-a-coder' => 'landing#adopt_a_coder', as: :adopt_a_coder
 
   # The priority is based upon order of creation: first created -> highest priority.
