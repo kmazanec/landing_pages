@@ -5,6 +5,8 @@ class LandingController < ApplicationController
     case @host
     when "www.adoptacoder.org"
       render :adopt_a_coder
+    when "sleepy-fjord-9426.herokuapp.com"
+      render :adopt_a_coder
     when "keithmazanec.com"
       render :keithmazanec
     when "locahost"
