@@ -8,7 +8,7 @@ class LandingController < ApplicationController
       render :adopt_a_coder
     when "sleepy-fjord-9426.herokuapp.com"
       render :adopt_a_coder
-    when "keithmazanec.com"
+    when "www.keithmazanec.com"
       render :keithmazanec
     when "localhost"
       render :keithmazanec
