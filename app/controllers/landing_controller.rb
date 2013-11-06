@@ -11,7 +11,7 @@ class LandingController < ApplicationController
     when "keithmazanec.com"
       render :keithmazanec
     when "localhost"
-      render :adopt_a_coder
+      render :keithmazanec
     else
       render :error
     end

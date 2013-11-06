@@ -44,12 +44,17 @@ a, p {
 }
 
 .backdrop {
-  background: url("../images/03381_wielkilipnik_1280x800.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("03381_wielkilipnik_1280x800.jpg");
 }
 
 .panel {
   /*background: #57A3E8;*/
-  background: url("../images/03381_wielkilipnik_1280x800_blur.jpg") 0 0 fixed;
+  background: url("03381_wielkilipnik_1280x800_blur.jpg") 0 0 fixed;
   border: 1px solid #888;
   color: #eee;
 }
