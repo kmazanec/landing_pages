@@ -1,14 +1,23 @@
-<div class="container">
+<div class="container adoptacoder">
   <div class="content">
+  <% if flash[:notice] %>
+    <div class="notice">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
     <h1>Adopt-a-Coder</h1>
     <p>The tech industry is poised to create millions of jobs in the next decade.  However, traditional univeristy computer science programs aren't preparing enough students with the right skills to start building software from day one.  To fill this gap, independent coding schools have emerged that are disrupting the way tech education is delivered.  Through short, intense, full-immersion curricula they are sending students into the workforce with the right skills to begin meaningful careers as software developers.</p>
     <p>While coding schools cost far less than traditional four-year undergraduate programs, they are still costly and out of reach for many people.  In the traditional univeristy model, a student has many different ways to pay for school.  Scholarships, in particular, have made college accessibile for millions of students.  For modern coding schools, no equivalent yet exists.  Enter Adopt-A-Coder, a crowd-funded scholarship platform to help level the playing field.</p>
     <p>A team of students from <%= link_to "Dev Bootcamp", "http://devbootcamp.com" %> built the initial version of Adopt-A-Coder in 8 days as their final project.  Now, those students have realized their project must live on and are working dilligently to build and deploy a full-scale platform.  It's an exciting time.  Check back in December and together we'll start changing lives, one coder at a time.</p>
     <p>Send us a note or just leave your email and we'll keep you up to date as we work.</p>
-    <%= form_for @user do |f| %>
-      <%= f.label :email %>
-      <%= f.email :email %>
-    <% end %>
+    <div class="center">
+      <%= form_for @user do |f| %>
+        <%= f.email_field :email, placeholder: "Email (kept private, we promise)" %><br>
+        <%= text_area_tag :note, nil, placeholder: "Tell us something..." %><br>
+        <%= f.submit "Submit", class: "button" %>
+      <% end %>
+    </div>
   </div>
 
 </div>

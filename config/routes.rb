@@ -1,6 +1,7 @@
 Landing::Application.routes.draw do
   root 'landing#index'
-  get '/adopt-a-coder' => 'landing#adopt_a_coder', as: :adopt_a_coder
+  resources :users, only: [:create]
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

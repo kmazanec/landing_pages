@@ -2,6 +2,7 @@ class LandingController < ApplicationController
 
   def index
     @host = request.host
+    @user = User.new
     case @host
     when "www.adoptacoder.org"
       render :adopt_a_coder
@@ -9,15 +10,11 @@ class LandingController < ApplicationController
       render :adopt_a_coder
     when "keithmazanec.com"
       render :keithmazanec
-    when "locahost"
+    when "localhost"
       render :adopt_a_coder
     else
       render :error
     end
-  end
-
-  def adopt_a_coder
-    @host = request.host
   end
 
 end
