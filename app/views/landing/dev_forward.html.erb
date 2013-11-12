@@ -1,0 +1,37 @@
+<div class="dev_forward">
+  <div class="container shadow">
+
+  <div class="header-wrapper">
+    <header>
+      <div class="site-title">
+        <h1>Dev Forward</h1>
+        <h3>Moving Forward Through Coding</h3>
+      </div>
+    </header>
+  </div>
+
+  <div class="page">
+    <h4>What is Dev Forward?</h4>
+    <p>Dev forward is an organization committed to helping the tech community connect with other communities, such as individuals from under-resourced communities that have traditionally been under-represented in the tech industry. We will accomplish this through web development instruction, education and mentoring individuals through partnerships with community organizations. Additionally, we hope to support new, socially driven web applications built to help the community and without the intention of making a profit.</p>
+    <h4>Are you a not for profit organization?</h4>
+    <p>Yes! Dev Forward is a non-profit organization incorporated in the State of Illinois that is currently going through the steps to obtain our 501 (c)(3) Non-Profit Status. </p>
+    <h4>Who is involved in Dev Forward?</h4>
+    <p>Dev Forward was founded by 4 graduates from <a href="http://www.devbootcamp.com">Dev Bootcamp</a>. Key to Dev Forward's success has been the involvement of members of the Dev Bootcamp Community, including instructors, graduates and current students. Dev forward is an Open Source Project with all contributors volunteering their time! To get involved, email us at <a href="mailto:DevForwardFoundation@gmail.com" target="_top">DevForwardFoundation@gmail.com</a>!</p>
+  </div>
+
+  <div class="reach-out">
+    <%= form_for @user do |f| %>
+      <%= f.email_field :email, placeholder: "Email Address - We respect your privacy and will not share this with anyone" %><br>
+      <%= text_area_tag :note, nil, placeholder: "Say hello!" %><br>
+      <%= f.submit "Contact Us" %>
+    <% end %>
+  </div>
+
+  <div class="footer-wrapper">
+    <footer>
+        <p>&copy; <time>2013</time> Dev Forward</p>
+    </footer>
+  </div>  
+
+  </div>
+</div>

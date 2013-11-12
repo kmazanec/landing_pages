@@ -1,0 +1,38 @@
+.dev_forward {
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #444;
+  font-family: "Open Sans";
+  .container {
+    background-color: #eee;
+    margin: 0 auto;
+    width: 750px;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid #bbb;
+  }
+  th {
+    text-align: left;
+  }
+  .shadow {
+    box-shadow: 2px 1px 5px 1px #666;
+  }
+  .reach-out {
+    width: 100%;
+    text-align: center;
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+    }
+    textarea {
+      height: 8em;
+    }
+  }
+
+  .header-wrapper {
+    text-align: center;
+  }
+
+  .footer-wrapper {
+    text-align: center;
+  }
+}
